@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>easy-template-x demo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style/style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- title -->
+      <h2>
+        <a href="https://github.com/alonrbar/easy-template-x">
+          easy-template-x
+        </a>
+      </h2>
+      <p>
+        <a href="https://www.npmjs.com/package/easy-template-x" rel="nofollow"
+          ><img
+            src="https://camo.githubusercontent.com/456b7335d0cf0d44525d8393d035e9891117d287/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f656173792d74656d706c6174652d782e737667"
+            alt="npm version"
+            data-canonical-src="https://img.shields.io/npm/v/easy-template-x.svg"
+            style="max-width:100%;"
+        /></a>
+        <a href="https://github.com/alonrbar/easy-template-x"
+          ><img
+            alt="GitHub stars"
+            src="https://img.shields.io/github/stars/alonrbar/easy-template-x?style=social"
+        /></a>
+      </p>
+
+      <br />
+
+      <!-- template -->
+      <div class="template-container">
+        <span class="block-title">The Template</span>
+        <img class="template-thumb" src="/res/template-thumb.png" />
+        <div class="custom-template-message">Custom template uploaded</div>
+        <button
+          class="btn btn-outline-primary btn-sm"
+          id="download-template-button"
+        >
+          Download sample template
+        </button>
+        &nbsp;&nbsp;&nbsp;
+        <button
+          class="btn btn-outline-primary btn-sm"
+          id="upload-template-button"
+        >
+          Upload custom template
+        </button>
+      </div>
+
+      <br />
+      <br />
+
+      <!-- data -->
+      <div class="data-container">
+        <span class="block-title">The Data</span>
+        <textarea id="template-data-txt" rows="7"></textarea>
+        <span id="data-help-text">Feel free to edit the data...</span>
+      </div>
+
+      <button class="btn btn-primary" id="create-docx-button">
+        Create docx
+      </button>
+      <span id="create-docx-status"></span>
+    </div>
+
+    <script src="index.ts"></script>
+  </body>
+</html>
